@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+      *{font-family: 'Times New Roman', Times, serif;}
+        .border{
+            border-bottom: 6px solid red;
+
+        }
+         tbody {
+    border-top:none;
+  
+}
+.borderstyle{
+    border: 1px solid gainsboro;
+    /* padding-right: 10rem; */
+}
+
+        .text {
+        color:rgb(31, 31, 90)
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <div style="width:13rem ; height:100%; background-color:midnightblue;" class=" leftbar">
+            <img class="ml-4 mt-3" src="./Assets/logo.png" alt="">  
+            <div class="mt-5">
+                <img class="ml-4" src="./Assets/speedometer.png" alt=""> 
+                <b class="ml-3 text-white"> Dashboard</b> 
+            </div>
+            <div class="mt-3">
+                <img class="ml-4" src="./Assets/graph.png" alt="">
+                <b class="ml-3 text-white"> Activity</b> 
+            </div>
+            <div class="mt-3">
+                <img class="ml-4" src="./Assets/bill.png" alt="">
+                <b class="ml-3 text-white">Timesheet</b>
+            </div>
+            <div class="mt-4">
+                <img class="ml-4" src="./Assets/timer_white.png" alt=""> 
+                 <b class="ml-3 text-white">To-Do</b>
+            </div>
+            <div class="mt-3">
+                <img class="ml-4" src="./Assets/icons8-today-96.png" alt="">
+
+                 <b class="ml-3 text-white">Invoices</b>
+            </div>
+            <div class="mt-3">
+                <img class="ml-4" src="./Assets/folder.png" alt="">
+                 <b class="ml-3 text-white">Projects</b>
+            </div>
+            <div class="mt-4">
+                <img class="ml-4" src="./Assets/help.png" alt="">
+                 <b class="ml-3 text-white">Help</b>
+            </div>
+            <div class="mt-3">
+                <img class="ml-4" src="./Assets/download.png" alt="">
+                 <b class="ml-3 text-white">Download APP</b>
+            </div>
+            <img  src="./Assets/sidebar_overlay.png" height="165px" alt="">
+            <div>
+                <img class="ml-4 mb-4" src="./Assets/settings.png" alt=""> |
+                <img class="ml-4 mb-4" src="./Assets/notification.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="middlebar">
+                <div style=" border-bottom: 2px solid gainsboro;">
+                    <div class="ml-2 row">
+                    <!-- <div style="width: 0rem;"> -->
+                        <div style="width: 60rem;" class="col-10">
+                            <select  class=" btn p-2 mb-2 mt-1"  name="" id="">
+                            <option value="">Design Task </option>   
+                          </select></div>
+                  <div class="col-2">
+                    <button class="btn mb-2 mt-1" style="color:rgb(31, 31, 90);"> <b>+ Add PROJECT</b></button>
+                  </div>
+                </div>       
+                </div>
+                <div class="d-flex">
+                    <div style="width: 45rem;" class="innerleft">
+                        <div style=" border-right: 2px solid gainsboro;">
+                        <div class=" d-flex timesheet">
+                            <h4 class="sheet mt-1 ml-3" style="width: 35rem;">Timesheet</h4>
+                            <button style="font-size: 0.8rem;" class="btn text mt-1"> <b style="font-size: 0.8rem;"> VIEW FULLSHEET</b></button>
+                            <!-- <div style=" border-right: 2px solid gainsboro;"> -->
+                            <img class="mt-4" src="./Assets/more.png" width="25px" height="10px" alt="">
+            <br>
+                        </div>
+                        <div class="container">
+                            <div style=" border-bottom: 2px solid gainsboro;">
+                            <table class="ml-4 table table-hover table-borderless table-striped ">
+                                <thead style="border-top: none;">
+                                    <tr>
+                                        <th style="width:100px; font-size: 0.65rem;" scope="col">Project</th>
+                                        <th style="width:100px;font-size: 0.65rem;"scope="col">Date</th>
+                                        <th style="width:80px;font-size: 0.65rem;"scope="col">Start Time</th>
+                                        <th style="width:80px;font-size: 0.65rem;"scope="col">Stop Time</th>
+                                        <th style="width:80px;font-size: 0.65rem;" scope="col">Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th  class="p-1.0" style="font-size: 0.65rem;" scope="row"> <b class=" btnbg-primary p-0.2  mr-2" style="color:rgb(31, 31, 90);">1</b> Landing Page Design</th>
+                                        <td class="p-1.0" style="font-size: 0.65rem;" >May 21,2019</td>
+                                        <td  class="p-1.0" style="font-size: 0.65rem;">1:10pm</td>
+                                        <td  class="p-1.0" style="font-size: 0.65rem;">9:20pm</td>
+                                        <td  class="p-1.0" style="font-size: 0.65rem;">8:10:37</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th class="p-1.0" style="font-size: 0.65rem;"scope="row"><b class="btnbg-gradient-primary text-warning  mr-2">3</b> Mobile App</th>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">May 22,2019</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">12:00pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">8:00pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-1.0" style="font-size: 0.65rem;"scope="row"><b class="btnbg-gradient-primary  mr-2" style="color: orchid;">5</b>UI/UX</th>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">May 23,2019</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">1:10pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;" >1:20pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">0:10:37</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-1.0" style="font-size: 0.65rem;" scope="row"><b class="btnbg-gradient-primary text-info  mr-2">2</b> Website/apps</th>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">May 24,2019</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">1:11pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">9:00pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">7:49:37</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="p-1.0" style="font-size: 0.65rem;"scope="row"><b class="btnbg-gradient-primary text-warning  mr-2">9</b> Branding</th>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">May 26,2019</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">1:10pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">1:20pm</td>
+                                        <td class="p-1.0" style="font-size: 0.65rem;">0:10:37</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="todolist">
+                                    <h4>To-Do lists</h4>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <h6 style="color:midnightblue"> <b>20</b>  <br>
+                                            May </h6>
+
+                                        </div>
+                                        <div class="col-6">
+                                        <div class=" btn borderstyle p-3">
+                                            <b style="padding-right: 16rem;"> Revamp Instagram app </b>     <img src="./Assets/more.png" alt=""> 
+                                    
+                                        </div>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <h6> <b>21</b>  <br>
+                                            May </h6>
+
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            
+                                        <div style="background-color:gainsboro"class=" btn borderstyle p-3">
+                                            <b style="padding-right: 21rem;">Prototyping</b>     <img src="./Assets/more.png" alt=""> 
+                                         
+                                        </div>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-1">
+                                            <h6> <b>22</b>  <br>
+                                            May </h6>
+
+                                        </div>
+                                        <!-- <div class=" btn borderstyle">
+                                            <b style="padding-right: 10rem;">Collect references for new project</b>     <img src="./Assets/more.png" alt=""> 
+                                            
+                                        </div> -->
+                                            <div  class="col-6 mt-2">
+                                                 <div style="background-color:gainsboro" class=" btn borderstyle p-3">
+                                                <b style="padding-right: 12rem;">Collect references for new project</b>     <img src="./Assets/more.png" alt=""> 
+                                             
+                                            </div></div>
+                                       
+                                    
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+
+                <div class="innerright">
+                    <div style=" border-bottom: 2px solid gainsboro;">
+
+                       <h6>Report</h6>
+                       <!-- <div style="background-color: midnightblue;"  class="btn">
+                        <div class='row'>
+                            <div  class='col-1'>
+                                
+                             <img style="background-color: midnightblue;" src="./Assets/graph.png" alt="">
+                            </div>
+                            <div class='col-2 text-white'>
+                              <div class="d-flex"> <div>Weekly Activity</div>
+                               <button class="btn btn-success  ml-2">+ 17%</button>    </div>    
+                               52%
+    
+                            </div>
+                        </div>
+                       </div>
+                       <div style="background-color: gainsboro;"  class=" mt-2">
+                        <div class='row'>
+                            <div  class='col-1'>
+                             <img style="background-color: gainsboro;" src="./Assets/timer_blue.png" alt="">
+                            </div>
+                            <div class='col-3 text-white'>
+                              <div class="d-flex">
+                                   <div class="text-dark"> WORKED THIS WEEK </div>
+                                  <button class=" btn-danger  ml-2">- 17%</button>    </div>    
+                               11:56:33
+    
+                            </div>
+                        </div>
+                       </div> -->
+                        <button  style = "background-color: midnightblue;font-size: 0.7rem;" class="btn btn-block">
+                            <img style="background-color: midnightblue;" src="./Assets/graph.png" alt="">
+                             <b class="text-white"> Weekly Activity 
+                                  <div style="background-color: ;font-size: 0.5rem" class=" btn btn-success">
+                                 +17%
+                                  </div> <br>
+                                52% </em> 
+                        </button> <br>
+                        <button  style = "background-color: ;font-size: 0.7rem;" class="btn mt-3 btn-block">
+                            <img  src="./Assets/timer_blue.png" alt="">
+                             <b class="text-dark">WORKED WEEK
+                                  <div style="background-color: rgb(224, 213, 217);color:red font-size: 0.5rem;" class=" btn text-danger">
+                                 -17%
+                                  </div> <br>  11:56:33
+                                 </em>
+                        </button> <br>
+                       <button class="btn mt-4  btn-outline-info btn-block mb-5 btn-block">
+                          <img src="./Assets/pdf.png"  alt=""> EXPORT AS PDF
+                       </button>
+                </div>
+                <div class="screenshots">
+                    <h6 class="mt-3">screenshots</h6>
+                    <div class="mt-3" style=" border-bottom: 2px solid gainsboro;">
+                    <div class="d-flex">
+                        <img height = "20px"class="mr-5"src="./Assets/picture.png" alt="">
+                         <p class="mr-5">screen.png</p>
+                         <button style="color: midnightblue;"class="btn">view</button>
+                    </div>
+                    </div>
+                    <div class="mt-3"  style=" border-bottom: 2px solid gainsboro;">
+                        <div class="d-flex">
+                            <img height = "20px"class="mr-5" src="./Assets/picture.png" alt="">
+                             <p class="mr-5">screen.png</p>
+                             <button style="color: midnightblue;"class="btn">view</button>
+                        </div>
+                        </div>
+                        <div class="mt-3" style=" border-bottom: 2px solid gainsboro;">
+                            <div class="d-flex">
+                                <img height = "20px"class="mr-5"src="./Assets/video_camera.png" alt="">
+                                 <p class="mr-5">screen.png</p>
+                                 <button style="background-color: midnightblue;" class="btn text-white">play</button>
+                            </div>
+                            </div>
+
+                </div>
+
+
+
+                </div>
+            </div>
+
+                </div>
+               
+        </div>
+    </div>
+</body>
+</html>
